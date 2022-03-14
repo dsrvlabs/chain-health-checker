@@ -15,14 +15,15 @@ var ethereumBody = `
 `;
 
 const directory = 'ethereum';
+const timeout = 100000; // 10 second
 
-const requestRPC = (url, chain, address) => {
+const requestRPC = (url, chain) => {
   request(
     {
       url: `${url}`,
       method: 'POST',
       headers: headers,
-      timeout: 10000,
+      timeout,
       body: ethereumBody,
     },
     function (_, response, _) {

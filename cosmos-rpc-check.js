@@ -8,6 +8,20 @@ var headers = {
 const timeout = 100000; // 10 second
 const cosmosDirectory = 'cosmos';
 
+const requestRPC = (url, chainName) => {
+  request(
+    {
+      url: `${url}/abci_info`,
+      method: 'GET',
+      headers: headers,
+      timeout,
+    },
+    function (_, response, _) {
+      console.log(`${response?.statusCode} ${chainName} ${url}`);
+    }
+  );
+};
+
 const main = async () => {
   const files = await fs.readdir(cosmosDirectory, 'utf8');
 
@@ -17,30 +31,10 @@ const main = async () => {
 
     if (typeof json.rpc === 'object') {
       for (const rpc of json.rpc) {
-        request(
-          {
-            url: `${rpc.address}/abci_info`,
-            method: 'GET',
-            headers: headers,
-            timeout,
-          },
-          function (_, response, _) {
-            console.log(`${response?.statusCode} ${file} ${rpc.address}`);
-          }
-        );
+        requestRPC(rpc.address);
       }
     } else {
-      request(
-        {
-          url: `${json.rpc}/abci_info`,
-          method: 'GET',
-          headers: headers,
-          timeout,
-        },
-        function (_, response, _) {
-          console.log(`${response?.statusCode} ${file} ${json.rpc}`);
-        }
-      );
+      requestRPC(json.rpc);
     }
   }
 };
