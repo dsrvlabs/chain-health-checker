@@ -31,10 +31,10 @@ const main = async () => {
 
     if (typeof json.rpc === 'object') {
       for (const rpc of json.rpc) {
-        requestRPC(rpc.address);
+        requestRPC(rpc.address, json.chainName);
       }
     } else {
-      requestRPC(json.rpc);
+      requestRPC(json.rpc, json.chainName);
     }
   }
 };
