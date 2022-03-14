@@ -1,0 +1,55 @@
+{
+    "chainId": "likecoin-mainnet-2",
+    "chainName": "likecoin",
+    "rpc": [
+        {
+            "address": "https://mainnet-node.like.co/rpc/",
+            "provider": "likecoin"
+        }
+    ],
+    "rest": [
+        {
+            "address": "https://mainnet-node.like.co",
+            "provider": "likecoin"
+        }
+    ],
+    "bip44": {
+      "coinType": 118
+    },
+    "bech32Config": {
+      "bech32PrefixAccAddr": "cosmos",
+      "bech32PrefixAccPub": "cosmospub",
+      "bech32PrefixValAddr": "cosmosvaloper",
+      "bech32PrefixValPub": "cosmosvaloperpub",
+      "bech32PrefixConsAddr": "cosmosvalcons",
+      "bech32PrefixConsPub": "cosmosvalconspub"
+    },
+    "stakeCurrency": {
+      "coinDenom": "LIKE",
+      "coinMinimalDenom": "nanolike",
+      "coinDecimals": 9,
+      "coingecko_id": "likecoin"
+    },
+    "currencies": [
+      {
+        "coinDenom": "LIKE",
+        "coinMinimalDenom": "nanolike",
+        "coinDecimals": 9,
+        "coingecko_id": "likecoin"
+    }
+    ],
+    "feeCurrencies": [
+      {
+        "coinDenom": "LIKE",
+        "coinMinimalDenom": "nanolike",
+        "coinDecimals": 9,
+        "coingecko_id": "likecoin"
+    }
+    ],
+    "coinType": 118,
+    "gasPriceStep": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    }
+  }

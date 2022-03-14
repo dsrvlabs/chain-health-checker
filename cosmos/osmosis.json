@@ -1,0 +1,83 @@
+{
+    "chainId": "osmosis-1",
+    "chainName": "Osmosis",
+    "rpc": [
+        {
+            "address": "https://osmosis.validator.network/",
+            "provider": "validatornetwork"
+        },
+        {
+            "address": "https://osmosis-1.technofractal.com:443",
+            "provider": "strangelove-ventures"
+        },
+        {
+            "address": "https://rpc-osmosis.blockapsis.com",
+            "provider": "chainapsis"
+        }
+    ],
+    "rest": [
+        {
+            "address": "https://lcd-osmosis.blockapsis.com",
+            "provider": "chainapsis"
+        }
+    ],
+    "bip44": {
+      "coinType": 118
+    },
+    "bech32Config": {
+      "bech32PrefixAccAddr": "osmo",
+      "bech32PrefixAccPub": "osmopub",
+      "bech32PrefixValAddr": "osmovaloper",
+      "bech32PrefixValPub": "osmovaloperpub",
+      "bech32PrefixConsAddr": "osmovalcons",
+      "bech32PrefixConsPub": "osmovalconspub"
+    },
+    "stakeCurrency": [ 
+        {
+          "coinDenom": "OSMO",
+          "coinMinimalDenom": "uosmo",
+          "coinDecimals": 6,
+          "coingecko_id": "osmosis"
+        },
+        {
+            "coinDenom": "ION",
+            "coinMinimalDenom": "uion",
+            "coinDecimals": 6,
+            "coingecko_id": "ion"
+        }
+        ],
+        "currencies": [
+          {
+            "coinDenom": "OSMO",
+            "coinMinimalDenom": "uosmo",
+            "coinDecimals": 6,
+            "coingecko_id": "osmosis"
+        },
+          {
+              "coinDenom": "ION",
+              "coinMinimalDenom": "uion",
+              "coinDecimals": 6,
+              "coingecko_id": "ion"
+            }
+        ],
+        "feeCurrencies": [
+          {
+            "coinDenom": "OSMO",
+            "coinMinimalDenom": "uosmo",
+            "coinDecimals": 6,
+            "coingecko_id": "osmosis"
+        },
+          {
+              "coinDenom": "ION",
+              "coinMinimalDenom": "uion",
+              "coinDecimals": 6,
+              "coingecko_id": "ion"
+            }
+        ],
+    "coinType": 118,
+    "gasPriceStep": {
+      "low": 0.0,
+      "average": 0.0,
+      "high": 0.0
+    }
+  }

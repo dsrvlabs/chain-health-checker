@@ -1,0 +1,55 @@
+{
+    "chainId": "lum-network-1",
+    "chainName": "lumnetwork",
+    "rpc": [
+        {
+            "address": "https://node0.mainnet.lum.network/rpc",
+            "provider": "Lum Foundation"
+        }
+    ],
+    "rest": [
+        {
+            "address": "https://node0.mainnet.lum.network/rest",
+            "provider": "Lum Foundation"
+        }
+    ],
+    "bip44": {
+      "coinType": 880
+    },
+    "bech32Config": {
+      "bech32PrefixAccAddr": "lum",
+      "bech32PrefixAccPub": "lumpub",
+      "bech32PrefixValAddr": "lumvaloper",
+      "bech32PrefixValPub": "lumvaloperpub",
+      "bech32PrefixConsAddr": "lumvalcons",
+      "bech32PrefixConsPub": "lumvalconspub"
+    },
+    "stakeCurrency": {
+      "coinDenom": "LUM",
+      "coinMinimalDenom": "ulum",
+      "coinDecimals": 6,
+      "coingecko_id": "lum-network"
+    },
+    "currencies": [
+      {
+        "coinDenom": "LUM",
+        "coinMinimalDenom": "ulum",
+        "coinDecimals": 6,
+        "coingecko_id": "lum-network"
+    }
+    ],
+    "feeCurrencies": [
+      {
+        "coinDenom": "LUM",
+        "coinMinimalDenom": "ulum",
+        "coinDecimals": 6,
+        "coingecko_id": "lum-network"
+    }
+    ],
+    "coinType": 880,
+    "gasPriceStep": {
+      "low": 0.001,
+      "average": 0.0025,
+      "high": 0.004
+    }
+  }

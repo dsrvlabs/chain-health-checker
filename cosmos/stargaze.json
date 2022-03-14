@@ -1,0 +1,68 @@
+{
+  "chainId": "stargaze-1",
+  "chainName": "Stargaze",
+  "rpc": [
+    {
+      "address": "https://rpc.stargaze-apis.com/",
+      "provider": "Stargaze Foundation"
+    },
+    {
+      "address": "https://rpc.stargaze.ezstaking.io/",
+      "provider": "EZStaking.io"
+    },
+    {
+      "address": "https://rpc.stars.kingnodes.com/",
+      "provider": "kingnodes"
+    }
+  ],
+  "rest": [
+    {
+      "address": "https://rest.stargaze-apis.com/",
+      "provider": "Stargaze Foundation"
+    },
+    {
+      "address": "https://api.stargaze.ezstaking.io/",
+      "provider": "EZStaking.io"
+    },
+    {
+      "address": "https://api.stars.kingnodes.com/",
+      "provider": "kingnodes"
+    }
+  ],
+  "bip44": {
+    "coinType": 118
+  },
+  "bech32Config": {
+    "bech32PrefixAccAddr": "stars",
+    "bech32PrefixAccPub": "starspub",
+    "bech32PrefixValAddr": "starsvaloper",
+    "bech32PrefixValPub": "starsvaloperpub",
+    "bech32PrefixConsAddr": "starsvalcons",
+    "bech32PrefixConsPub": "starsvalconspub"
+  },
+  "stakeCurrency": {
+    "coinDenom": "STARS",
+    "coinMinimalDenom": "ustars",
+    "coinDecimals": 6
+  },
+  "currencies": [
+    {
+      "coinDenom": "STARS",
+      "coinMinimalDenom": "ustars",
+      "coinDecimals": 6
+    }
+  ],
+  "feeCurrencies": [
+    {
+      "coinDenom": "STARS",
+      "coinMinimalDenom": "ustars",
+      "coinDecimals": 6
+    }
+  ],
+  "coinType": 118,
+  "gasPriceStep": {
+    "low": 0.0,
+    "average": 0.0,
+    "high": 0.0
+  }
+}
